@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Airplan.Controller_manage_flight">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@arkaplanlar.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="103.0" prefHeight="26.0" prefWidth="113.0" text="Airline Company" textFill="WHITE">
+         <font>
+            <Font name="Alfios" size="17.0" />
+         </font></Label>
+      <Label layoutX="42.0" layoutY="158.0" prefHeight="31.0" prefWidth="100.0" text="Flight Type" textFill="WHITE">
+         <font>
+            <Font name="Alfios" size="22.0" />
+         </font></Label>
+      <Label layoutX="42.0" layoutY="213.0" prefHeight="26.0" prefWidth="83.0" text="Source" textFill="WHITE">
+         <font>
+            <Font name="Alfios" size="24.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="281.0" prefHeight="32.0" prefWidth="113.0" text="Destination" textFill="WHITE">
+         <font>
+            <Font name="Alfios" size="24.0" />
+         </font></Label>
+      <Button fx:id="createButton" layoutX="359.0" layoutY="396.0" mnemonicParsing="false" onAction="#createCancel" text="CREATE">
+         <font>
+            <Font name="Alfios" size="20.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="489.0" layoutY="396.0" mnemonicParsing="false" onAction="#createCancel" text="CANCEL">
+         <font>
+            <Font name="Alfios" size="19.0" />
+         </font></Button>
+      <ImageView fx:id="backCreateFlight" fitHeight="50.0" fitWidth="90.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image></ImageView>
+      <ComboBox fx:id="sCombo" layoutX="170.0" layoutY="219.0" prefHeight="26.0" prefWidth="224.0" promptText="Choose or Type" />
+      <ComboBox fx:id="dCombo" layoutX="170.0" layoutY="281.0" prefHeight="26.0" prefWidth="224.0" promptText="Choose or Type" />
+      <ComboBox fx:id="flightType" layoutX="170.0" layoutY="158.0" prefHeight="26.0" prefWidth="224.0" promptText="Choose Type" />
+      <ComboBox fx:id="comCombo" layoutX="170.0" layoutY="103.0" prefHeight="26.0" prefWidth="224.0" promptText="Choose Company" />
+      <DatePicker fx:id="date" layoutX="166.0" layoutY="342.0" prefHeight="36.0" prefWidth="232.0" promptText="Date" />
+      <Label layoutX="42.0" layoutY="343.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="Alfios" size="25.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

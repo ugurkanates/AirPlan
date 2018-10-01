@@ -1,0 +1,8 @@
+ge1280x720 sabit olcak
+
+4e bol
+0          360        720 
+  LAGGAGE        MANAGEMNT
+640        360 
+  TICKET        PRSONEL
+1280                  720

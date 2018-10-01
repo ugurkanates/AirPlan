@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Airplan.Controller_ticket">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@arkaplanlar4.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="check_b" layoutX="568.0" layoutY="126.0" mnemonicParsing="false" onAction="#is_2ways" prefHeight="85.0" prefWidth="214.0" text="Two-way Reservation " textFill="WHITE">
+         <font>
+            <Font name="Alfios" size="20.0" />
+         </font></CheckBox>
+      <ComboBox fx:id="fromCombo1" layoutX="37.0" layoutY="100.0" prefHeight="26.0" prefWidth="198.0" promptText="From" />
+      <ComboBox fx:id="toCombo1" layoutX="291.0" layoutY="100.0" prefHeight="26.0" prefWidth="198.0" promptText="To" />
+      <ComboBox fx:id="fromCombo2" layoutX="37.0" layoutY="172.0" prefHeight="26.0" prefWidth="198.0" promptText="From" />
+      <ComboBox fx:id="toCombo2" layoutX="291.0" layoutY="172.0" prefHeight="26.0" prefWidth="198.0" promptText="To" />
+      <DatePicker fx:id="startDatePicker" layoutX="37.0" layoutY="243.0" promptText="Choose Date" />
+      <DatePicker fx:id="endDatePicker" layoutX="291.0" layoutY="243.0" promptText="Choose Second Date" />
+      <ComboBox fx:id="chooseFlightCombo" layoutX="37.0" layoutY="328.0" prefHeight="26.0" prefWidth="457.0" promptText="Choose Flight" />
+      <ComboBox fx:id="seatCombo" layoutX="296.0" layoutY="389.0" prefWidth="198.0" promptText="Choose Seat" />
+      <TextField fx:id="name" layoutX="37.0" layoutY="512.0" prefHeight="26.0" prefWidth="198.0" promptText="Name" />
+      <TextField fx:id="surname" layoutX="37.0" layoutY="556.0" prefHeight="26.0" prefWidth="198.0" promptText="Surname" />
+      <Button layoutX="416.0" layoutY="556.0" mnemonicParsing="false" onAction="#book" prefHeight="44.0" prefWidth="117.0" text="BOOK">
+         <font>
+            <Font name="Alfios" size="25.0" />
+         </font></Button>
+      <ImageView fx:id="backTicket" fitHeight="50.0" fitWidth="90.0" layoutX="26.0" layoutY="14.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="lugCombo" layoutX="37.0" layoutY="456.0" prefHeight="26.0" prefWidth="198.0" promptText="Luggage Type" />
+      <TextField fx:id="lugKg" layoutX="296.0" layoutY="456.0" prefHeight="26.0" prefWidth="198.0" promptText="Luggage KG" />
+      <CheckBox fx:id="isVip" layoutX="291.0" layoutY="524.0" mnemonicParsing="false" text="VIP" textFill="WHITE">
+         <font>
+            <Font name="Alfios" size="21.0" />
+         </font></CheckBox>
+      <ComboBox fx:id="companyCombo" layoutX="37.0" layoutY="389.0" prefHeight="26.0" prefWidth="198.0" promptText="Choose Company" />
+   </children>
+</AnchorPane>

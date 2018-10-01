@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Airplan.Controller_main_ticket">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@arkaplanlar4.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="78.0" layoutY="137.0" prefHeight="493.0" prefWidth="1125.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <TextField fx:id="passengerText" layoutX="211.0" layoutY="77.0" prefHeight="26.0" prefWidth="279.0" promptText="Passenger">
+         <font>
+            <Font name="Alfios" size="14.0" />
+         </font></TextField>
+      <Label layoutX="78.0" layoutY="73.0" prefHeight="26.0" prefWidth="122.0" text="Passenger" textFill="WHITE">
+         <font>
+            <Font name="Alfios" size="25.0" />
+         </font></Label>
+      <ImageView fx:id="back2" fitHeight="50.0" fitWidth="90.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
